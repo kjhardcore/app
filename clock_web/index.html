@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>clock App</title>
+<link rel="stylesheet" href="css/index.css">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/index.js"></script>
+</head>
+<body>
+    <section class="coatch_mark">
+    </section>
+    <section class="view1">    
+        <p class="hour">88</p>
+        <span>:</span>
+        <p class="minute">88</p>
+    </section><!--view1-->
+    <section class="view2">
+        <script>
+        for(i=1;i<=12;i++){
+            document.write("<i></i>")
+        }//for
+        </script>
+        <span class="pin pin_hour"></span>
+        <span class="pin pin_min"></span>
+        <span class="pin pin_sec"></span>
+    </section><!--view1--> 
+    <section class="view3">
+        <p class="year">2019.</p>
+        <p class="month">02.</p>
+        <p class="date">21</p>
+    </section>
+    <div class="tab">
+        <button class="digit" data-view=".view1">Digit</button>
+        <button class="analog" data-view=".view2">Analog</button>
+    </div>
+</body>
+</html>
